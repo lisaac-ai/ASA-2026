@@ -1,0 +1,17 @@
+name: Projeto_ASA
+services:
+  web01:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: web01
+    container_name: web01
+    ports:
+      - '80:80'
+    volumes:
+      - ./data:/usr/share/nginx/html
+    networks:
+      - asa-network
+networks:
+  asa-network:
+    driver: bridge

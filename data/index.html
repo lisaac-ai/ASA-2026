@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+
+    <!-- Estilo (CSS) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3c0447;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #c316d3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(87, 3, 112);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Minha Primeira Página</h1>
+        <p>Bem-vindo ao meu site!</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h2>Conteúdo</h2>
+        <p>Criado para testes, clique no botão abaixo:</p>
+
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+
+        <p id="mensagem"></p>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 Meu Site</p>
+    </footer>
+
+    <!-- Script (JavaScript) -->
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "Você clicou no botão!";
+        }
+    </script>
+
+</body>
+</html>
